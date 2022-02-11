@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lei-o5-JUp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add New View Controller-->
+        <scene sceneID="Jld-rj-KSi">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="FGY-8u-qcV" customClass="AddNewViewController" customModule="ProjectLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cj1-Bc-lqV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grA-eE-DRJ" customClass="CustomView" customModule="ProjectLibrary" customModuleProvider="target">
+                                <rect key="frame" x="20" y="194" width="374" height="592"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-fl-d0A">
+                                        <rect key="frame" x="20" y="22" width="96" height="91.5"/>
+                                        <color key="backgroundColor" red="0.83529411760000005" green="0.90588235289999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="96" id="XYm-9N-L6v"/>
+                                            <constraint firstAttribute="height" constant="96" id="ltV-4f-KW9"/>
+                                        </constraints>
+                                        <imageReference key="image" image="plus.circle" catalog="system" symbolScale="small"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coE-4p-DNm">
+                                        <rect key="frame" x="38" y="38" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="B3h-BN-NxS"/>
+                                            <constraint firstAttribute="height" constant="60" id="gkC-cg-apr"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cameraButton:" destination="FGY-8u-qcV" eventType="touchUpInside" id="5sm-hH-suL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMx-Uw-Hdd" customClass="CustomGradientButton" customModule="ProjectLibrary" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="528" width="314" height="44"/>
+                                        <color key="backgroundColor" red="0.83529411760000005" green="0.90588235289999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="p0o-v1-Qvt"/>
+                                        </constraints>
+                                        <state key="normal" title="SUBMIT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submintButtonAddNew:" destination="FGY-8u-qcV" eventType="touchUpInside" id="1GU-dO-d1C"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BUv-rf-OMR">
+                                        <rect key="frame" x="20" y="146" width="334" height="210"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oR6-yb-dJP" customClass="CustomTextfieldInfoBook" customModule="ProjectLibrary" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="uyt-Fy-D3a"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ym-uh-IqJ" customClass="CustomTextfieldInfoBook" customModule="ProjectLibrary" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="45" width="334" height="30"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="h8v-gU-XuA"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWT-r2-a3N" customClass="CustomTextfieldInfoBook" customModule="ProjectLibrary" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="90" width="334" height="30"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="qDA-lz-1j1"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DNq-A7-i4b" customClass="CustomTextfieldInfoBook" customModule="ProjectLibrary" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="135" width="334" height="30"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="UKK-dT-9sO"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvF-yD-QEf" customClass="CustomTextfieldInfoBook" customModule="ProjectLibrary" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="180" width="334" height="30"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="WQ6-JT-RLV"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="OMx-Uw-Hdd" firstAttribute="leading" secondItem="grA-eE-DRJ" secondAttribute="leading" constant="30" id="Cxx-ob-6Fo"/>
+                                    <constraint firstAttribute="trailing" secondItem="OMx-Uw-Hdd" secondAttribute="trailing" constant="30" id="F6u-2e-9Ab"/>
+                                    <constraint firstItem="OMx-Uw-Hdd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BUv-rf-OMR" secondAttribute="bottom" constant="30" id="MMY-Hq-maC"/>
+                                    <constraint firstItem="coE-4p-DNm" firstAttribute="centerY" secondItem="fwA-fl-d0A" secondAttribute="centerY" id="c8h-7d-lqQ"/>
+                                    <constraint firstItem="coE-4p-DNm" firstAttribute="centerX" secondItem="fwA-fl-d0A" secondAttribute="centerX" id="cFD-Zt-tAR"/>
+                                    <constraint firstItem="fwA-fl-d0A" firstAttribute="top" secondItem="grA-eE-DRJ" secondAttribute="top" constant="20" id="h62-6g-ed9"/>
+                                    <constraint firstItem="BUv-rf-OMR" firstAttribute="top" secondItem="fwA-fl-d0A" secondAttribute="bottom" constant="30" id="kLK-iv-fVB"/>
+                                    <constraint firstItem="BUv-rf-OMR" firstAttribute="leading" secondItem="grA-eE-DRJ" secondAttribute="leading" constant="20" id="n70-G5-Qwo"/>
+                                    <constraint firstAttribute="bottom" secondItem="OMx-Uw-Hdd" secondAttribute="bottom" constant="20" id="okG-Pk-XYt"/>
+                                    <constraint firstItem="fwA-fl-d0A" firstAttribute="leading" secondItem="grA-eE-DRJ" secondAttribute="leading" constant="20" id="pxY-XU-uX4"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUv-rf-OMR" secondAttribute="trailing" constant="20" id="yMI-oo-vUW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0KJ-fr-ei6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="grA-eE-DRJ" firstAttribute="top" secondItem="0KJ-fr-ei6" secondAttribute="top" constant="150" id="Pd8-8A-DWf"/>
+                            <constraint firstItem="grA-eE-DRJ" firstAttribute="leading" secondItem="0KJ-fr-ei6" secondAttribute="leading" constant="20" id="UZr-2s-fNr"/>
+                            <constraint firstItem="grA-eE-DRJ" firstAttribute="bottom" secondItem="0KJ-fr-ei6" secondAttribute="bottom" constant="-76" id="kzx-UV-ILP"/>
+                            <constraint firstItem="0KJ-fr-ei6" firstAttribute="trailing" secondItem="grA-eE-DRJ" secondAttribute="trailing" constant="20" id="vKR-YM-kj9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yzv-Hp-cT9"/>
+                    <connections>
+                        <outlet property="authorTextfield" destination="2ym-uh-IqJ" id="Ycu-6j-l4m"/>
+                        <outlet property="bookNameTextfield" destination="oR6-yb-dJP" id="GZT-PZ-you"/>
+                        <outlet property="cameraButton" destination="coE-4p-DNm" id="g8i-0R-uda"/>
+                        <outlet property="cameraImage" destination="fwA-fl-d0A" id="CzG-nr-Fz4"/>
+                        <outlet property="contentView" destination="grA-eE-DRJ" id="T7f-uq-mQY"/>
+                        <outlet property="descriptionBookTextfield" destination="wvF-yD-QEf" id="0zQ-Po-FeN"/>
+                        <outlet property="submitButton" destination="OMx-Uw-Hdd" id="72S-Zi-v5M"/>
+                        <outlet property="topicBookTextfield" destination="DNq-A7-i4b" id="Yce-XO-sr4"/>
+                        <outlet property="yearBookTextfield" destination="NWT-r2-a3N" id="yXa-pA-Ak3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMw-Z4-VRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3026.0869565217395" y="545.75892857142856"/>
+        </scene>
+        <!--Add New-->
+        <scene sceneID="8gN-vy-LaQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Lei-o5-JUp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add New" image="ic_add new" selectedImage="ic_add new" id="2fO-7r-sNQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IYn-HH-hYg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FGY-8u-qcV" kind="relationship" relationship="rootViewController" id="mVh-CE-Lba"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEH-ge-PW4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2115.9420289855075" y="545.75892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_add new" width="25" height="25"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
